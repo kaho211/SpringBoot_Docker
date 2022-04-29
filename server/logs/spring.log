@@ -3230,3 +3230,677 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2022-04-27 01:44:30.768 DEBUG 148 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
 2022-04-27 01:44:30.770 TRACE 148 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@f3c827] 
 2022-04-27 01:44:30.773 DEBUG 148 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 12:46:40.746  INFO 340 --- [Test worker] com.example.app.AppApplicationTests      : Starting AppApplicationTests using Java 15.0.2 on 24ae363a54bf with PID 340 (started by root in /srv)
+2022-04-29 12:46:40.749  INFO 340 --- [Test worker] com.example.app.AppApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2022-04-29 12:46:40.935 TRACE 340 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@60e949e1, started on Fri Apr 29 12:46:40 UTC 2022
+2022-04-29 12:46:44.360  INFO 340 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 12:46:44.807  INFO 340 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 396 ms. Found 1 JPA repository interfaces.
+2022-04-29 12:46:47.166 TRACE 340 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
+2022-04-29 12:46:47.167 TRACE 340 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
+2022-04-29 12:46:48.174  INFO 340 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-29 12:46:49.404  INFO 340 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-29 12:46:50.013  INFO 340 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 12:46:50.577  INFO 340 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-29 12:46:52.253  INFO 340 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 12:46:53.729  INFO 340 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-29 12:46:58.225  INFO 340 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 12:46:58.370  INFO 340 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 12:47:01.392  WARN 340 --- [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 12:47:03.135 DEBUG 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-29 12:47:03.804 TRACE 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.AppApplication:
+	{ [/]}: home()
+2022-04-29 12:47:03.811 TRACE 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-29 12:47:03.826 TRACE 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.UserController:
+	{GET [/users]}: index(Model)
+	{DELETE [/users/{id}]}: destroy(Long)
+	{POST [/users]}: create(User)
+	{GET [/users/new]}: newUser(Model)
+	{GET [/users/{id}]}: show(Long,Model)
+	{POST [/users/confirm]}: confirm(String,String,String,Model)
+2022-04-29 12:47:03.829 TRACE 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-29 12:47:03.832 DEBUG 340 --- [Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-29 12:47:03.902  INFO 340 --- [Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-29 12:47:04.342 DEBUG 340 --- [Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-29 12:47:04.459 TRACE 340 --- [Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-29 12:47:04.621 TRACE 340 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-29 12:47:04.621 TRACE 340 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-29 12:47:04.622 DEBUG 340 --- [Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-29 12:47:04.747 DEBUG 340 --- [Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-29 12:47:06.789 TRACE 340 --- [Test worker] o.s.w.c.s.GenericWebApplicationContext   : Using LifecycleProcessor [org.springframework.context.support.DefaultLifecycleProcessor@31f9f9b3]
+2022-04-29 12:47:06.816  INFO 340 --- [Test worker] com.example.app.AppApplicationTests      : Started AppApplicationTests in 27.752 seconds (JVM running for 31.994)
+2022-04-29 12:47:08.234 DEBUG 340 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@60e949e1, started on Fri Apr 29 12:46:40 UTC 2022
+2022-04-29 12:47:08.237  INFO 340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 12:47:08.245  INFO 340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-29 12:47:08.252  INFO 340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-29 13:21:41.639  INFO 410 --- [main] com.example.app.AppApplication           : Starting AppApplication using Java 15.0.2 on 24ae363a54bf with PID 410 (/srv/build/libs/app-0.0.1-SNAPSHOT.jar started by root in /srv)
+2022-04-29 13:21:41.647  INFO 410 --- [main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-29 13:21:43.163  INFO 410 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 13:21:43.283  INFO 410 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interfaces.
+2022-04-29 13:21:44.499  INFO 410 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-29 13:21:44.532  INFO 410 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-29 13:21:44.533  INFO 410 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-29 13:21:44.731  INFO 410 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-29 13:21:44.732  INFO 410 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2925 ms
+2022-04-29 13:21:45.160  INFO 410 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-29 13:21:45.654  INFO 410 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-29 13:21:45.765  INFO 410 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 13:21:46.000  INFO 410 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-29 13:21:46.523  INFO 410 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 13:21:47.015  INFO 410 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-29 13:21:48.433  INFO 410 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 13:21:48.462  INFO 410 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 13:21:49.032  WARN 410 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 13:21:49.243 DEBUG 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-29 13:21:49.430 TRACE 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.AppApplication:
+	{ [/]}: home()
+2022-04-29 13:21:49.434 TRACE 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-29 13:21:49.446 TRACE 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.UserController:
+	{GET [/users]}: index(Model)
+	{DELETE [/users/{id}]}: destroy(Long)
+	{POST [/users]}: create(User)
+	{GET [/users/new]}: newUser(Model)
+	{GET [/users/{id}]}: show(Long,Model)
+	{POST [/users/confirm]}: confirm(String,String,String,Model)
+2022-04-29 13:21:49.453 TRACE 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-29 13:21:49.461 DEBUG 410 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-29 13:21:50.172  INFO 410 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-29 13:21:50.196 DEBUG 410 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-29 13:21:50.211 TRACE 410 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-29 13:21:50.234 TRACE 410 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-29 13:21:50.236 TRACE 410 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-29 13:21:50.238 DEBUG 410 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-29 13:21:50.258 DEBUG 410 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-29 13:21:50.509  INFO 410 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-29 13:21:50.526  INFO 410 --- [main] com.example.app.AppApplication           : Started AppApplication in 9.963 seconds (JVM running for 10.899)
+2022-04-29 13:22:27.911  INFO 410 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:27.912  INFO 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-29 13:22:27.913 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@2def7a7a
+2022-04-29 13:22:27.914 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@2e51d054
+2022-04-29 13:22:27.915 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@5412bfea
+2022-04-29 13:22:27.917 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2022-04-29 13:22:27.920 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2022-04-29 13:22:27.921 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-29 13:22:27.922  INFO 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-04-29 13:22:27.956 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:27.973 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-29 13:22:27.975 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-04-29 13:22:28.007 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:22:28.014 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:22:28.019 DEBUG 410 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:22:28.020 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@dc4629d] 
+2022-04-29 13:22:28.576 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:22:28.609 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:28.622 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 13:22:29.243 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-04-29 13:22:29.244 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:29.245 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2022-04-29 13:22:29.255 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:29.257 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2022-04-29 13:22:29.258 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-04-29 13:22:29.259 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@43362f66]
+2022-04-29 13:22:29.295 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-04-29 13:22:29.304 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Fri Apr 29 13:22:29 UTC 2022, status=404, error=Not Found, path=/favicon.ico}]
+2022-04-29 13:22:29.398 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:22:29.399 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:29.400 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2022-04-29 13:22:37.415 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:37.416 TRACE 410 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:22:37.420 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:22:37.823 TRACE 410 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:22:37.825 DEBUG 410 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:22:37.826 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:22:37.874 DEBUG 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:22:37.892 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/css/bootstrap.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:37.892 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/js/bootstrap.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:37.894 TRACE 410 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:22:37.895 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:22:37.895 TRACE 410 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:22:37.895 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:22:37.898 TRACE 410 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=-1
+2022-04-29 13:22:37.898 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=-1
+2022-04-29 13:22:37.903 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:37.904 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:37.905 DEBUG 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:22:37.905 DEBUG 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:22:56.237 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/users/index", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:56.239 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:22:56.266 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2022-04-29 13:22:56.275  WARN 410 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"]
+2022-04-29 13:22:56.276 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:56.277 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:22:56.278 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:56.279 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:22:56.280 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:22:56.281 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@7a308c22, org.apache.catalina.connector.ResponseFacade@158759d7]
+2022-04-29 13:22:56.291 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:22:56.293 DEBUG 410 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:22:56.293 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:22:56.299 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:22:56.324 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/image/404error.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:22:56.327 TRACE 410 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 13:22:56.334 TRACE 410 --- [http-nio-8080-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Applying default cacheSeconds=-1
+2022-04-29 13:22:56.363 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:22:56.367 DEBUG 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:23:15.418 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/users/show", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:23:15.420 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:23:15.424 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"
+2022-04-29 13:23:15.424  WARN 410 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"]
+2022-04-29 13:23:15.425 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:23:15.426 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:23:15.428 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:23:15.431 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:23:15.432 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:23:15.432 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@7b57f0f, org.apache.catalina.connector.ResponseFacade@158759d7]
+2022-04-29 13:23:15.435 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:23:15.436 TRACE 410 --- [http-nio-8080-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:23:15.438 DEBUG 410 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:23:15.440 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:23:15.443 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:23:22.132 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:23:22.133 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:23:22.135 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:23:22.147 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:23:22.148 TRACE 410 --- [http-nio-8080-exec-9] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 13:23:22.148 DEBUG 410 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:23:22.148 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:23:22.151 DEBUG 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:26:28.975 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:28.978 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 13:26:28.980 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:26:28.982 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:26:28.984 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:26:28.985 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@3f760ee1] 
+2022-04-29 13:26:28.995 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:26:29.027 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/css/bootstrap.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:29.027 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/js/bootstrap.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:29.028 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:26:29.028 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:26:29.029 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:26:29.030 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:26:29.035 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:26:29.035 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:26:29.037 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:26:29.038 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:26:29.040 DEBUG 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:26:29.040 DEBUG 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:26:43.682 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/users/confirm", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:43.685 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#confirm(String, String, String, Model)
+2022-04-29 13:26:43.714 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: [bbb, bbb, bbb, {}]
+2022-04-29 13:26:43.715 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:26:43.716 DEBUG 410 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:26:43.717 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@50f8cd11] 
+2022-04-29 13:26:43.726 DEBUG 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:26:47.253 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/users", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:47.255 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#create(User)
+2022-04-29 13:26:47.277 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Arguments: [{id:null,name:bbb,email:bbb,inquiry:bbb}]
+2022-04-29 13:26:47.349 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:26:47.351 DEBUG 410 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:26:47.352 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@1b348d99] 
+2022-04-29 13:26:47.357 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:26:49.204 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:26:49.209 TRACE 410 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-29 13:26:49.212 TRACE 410 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-04-29 13:26:49.214 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:26:49.215 TRACE 410 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:26:49.218 TRACE 410 --- [http-nio-8080-exec-7] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
+2022-04-29 13:26:49.219 DEBUG 410 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:26:49.220 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@dc4629d] 
+2022-04-29 13:26:49.222 DEBUG 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:27:19.672 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:27:19.673 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:27:19.674 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:27:19.684 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:27:19.686 TRACE 410 --- [http-nio-8080-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 13:27:19.687 DEBUG 410 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:27:19.688 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:27:19.691 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:35:01.091 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/complete", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:35:01.092 TRACE 410 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 13:35:01.745 DEBUG 410 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-04-29 13:35:01.745 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:35:01.745 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2022-04-29 13:35:01.747 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:35:01.748 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:35:01.749 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:35:01.749 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@68ed7c36, org.apache.catalina.connector.ResponseFacade@22477942]
+2022-04-29 13:35:01.755 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:35:01.755 TRACE 410 --- [http-nio-8080-exec-1] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:35:01.756 DEBUG 410 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:35:01.756 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:35:01.758 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2022-04-29 13:35:01.773 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/image/404error.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:35:01.773 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/css/bootstrap.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:35:01.780 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 13:35:01.780 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:35:01.783 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:35:01.783 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/js/bootstrap.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:35:01.785 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:35:01.785 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:35:01.785 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:35:01.786 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:35:01.786 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:35:01.787 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:35:01.787 DEBUG 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:35:01.788 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:35:01.789 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:35:01.790 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:35:01.791 DEBUG 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:36:55.042 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/users/complete", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:36:55.044 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:36:55.048 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "complete"
+2022-04-29 13:36:55.049  WARN 410 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "complete"]
+2022-04-29 13:36:55.049 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:36:55.050 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:36:55.051 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:36:55.052 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:36:55.053 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:36:55.053 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@286074fd, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:36:55.056 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:36:55.057 TRACE 410 --- [http-nio-8080-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:36:55.058 DEBUG 410 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:36:55.059 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:36:55.062 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:37:02.055 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:37:02.057 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:37:02.058 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:37:02.068 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:37:02.069 TRACE 410 --- [http-nio-8080-exec-9] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 13:37:02.069 DEBUG 410 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:37:02.070 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:37:02.074 DEBUG 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:37:09.399 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/users/show", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:37:09.401 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:37:09.404 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"
+2022-04-29 13:37:09.408  WARN 410 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"]
+2022-04-29 13:37:09.408 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:37:09.409 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:37:09.411 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:37:09.413 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:37:09.414 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:37:09.416 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@55aada8a, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:37:09.417 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:37:09.419 TRACE 410 --- [http-nio-8080-exec-10] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:37:09.420 DEBUG 410 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:37:09.420 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:37:09.423 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:37:20.622 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:37:20.623 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 13:37:20.625 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:37:20.626 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:37:20.629 TRACE 410 --- [http-nio-8080-exec-1] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/new] served from cache
+2022-04-29 13:37:20.631 DEBUG 410 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:37:20.632 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@3f760ee1] 
+2022-04-29 13:37:20.635 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:38:00.945 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/show", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:00.947 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 13:38:01.561 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-04-29 13:38:01.562 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:38:01.563 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2022-04-29 13:38:01.564 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:01.565 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:38:01.565 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:38:01.567 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@3491019b, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:38:01.568 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:01.569 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:38:01.570 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:38:01.571 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:38:01.572 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2022-04-29 13:38:22.269 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:22.271 TRACE 410 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:38:22.272 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:38:22.285 TRACE 410 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:22.291 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 13:38:22.293 DEBUG 410 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:38:22.294 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:38:22.298 DEBUG 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:38:25.582 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/users/show", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:25.584 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:38:25.590 DEBUG 410 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"
+2022-04-29 13:38:25.591  WARN 410 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"]
+2022-04-29 13:38:25.593 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:38:25.595 DEBUG 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:38:25.596 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:25.598 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:38:25.598 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:38:25.599 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@2cc87b03, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:38:25.602 TRACE 410 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:25.603 TRACE 410 --- [http-nio-8080-exec-4] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:38:25.604 DEBUG 410 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:38:25.604 TRACE 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:38:25.607 DEBUG 410 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:38:28.711 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/users/show", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:28.713 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:38:28.715 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"
+2022-04-29 13:38:28.716  WARN 410 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "show"]
+2022-04-29 13:38:28.718 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:38:28.720 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:38:28.721 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:28.725 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:38:28.726 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:38:28.727 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@41ec3f66, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:38:28.729 TRACE 410 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:28.730 TRACE 410 --- [http-nio-8080-exec-6] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:38:28.730 DEBUG 410 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:38:28.731 TRACE 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:38:28.733 DEBUG 410 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:38:34.028 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:34.029 TRACE 410 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 13:38:34.030 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:38:34.031 TRACE 410 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:34.032 TRACE 410 --- [http-nio-8080-exec-7] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/new] served from cache
+2022-04-29 13:38:34.033 DEBUG 410 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:38:34.033 TRACE 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@3f760ee1] 
+2022-04-29 13:38:34.036 DEBUG 410 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:38:40.594 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/users/index", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:40.595 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:38:40.597 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2022-04-29 13:38:40.598  WARN 410 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"]
+2022-04-29 13:38:40.601 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:38:40.603 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:38:40.605 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:38:40.607 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:38:40.611 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:38:40.613 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@28ddd874, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:38:40.615 TRACE 410 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:38:40.616 TRACE 410 --- [http-nio-8080-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:38:40.617 DEBUG 410 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:38:40.618 TRACE 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:38:40.621 DEBUG 410 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:39:23.641 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users/confirm", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:23.643 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:39:23.645 DEBUG 410 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"
+2022-04-29 13:39:23.646  WARN 410 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "confirm"]
+2022-04-29 13:39:23.646 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:39:23.647 DEBUG 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:39:23.649 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:23.650 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:39:23.651 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:39:23.652 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@69f5ee49, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:39:23.654 TRACE 410 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:39:23.655 TRACE 410 --- [http-nio-8080-exec-9] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:39:23.655 DEBUG 410 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:39:23.656 TRACE 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:39:23.661 DEBUG 410 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:39:41.111 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/users/complete", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:41.113 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:39:41.116 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "complete"
+2022-04-29 13:39:41.117  WARN 410 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "complete"]
+2022-04-29 13:39:41.118 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:39:41.119 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:39:41.121 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:41.122 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:39:41.123 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:39:41.124 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@5b6d2e4f, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:39:41.126 TRACE 410 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:39:41.126 TRACE 410 --- [http-nio-8080-exec-10] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:39:41.127 DEBUG 410 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:39:41.127 TRACE 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:39:41.128 DEBUG 410 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:39:53.970 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users/index", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:53.971 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 13:39:53.973 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2022-04-29 13:39:53.975  WARN 410 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"]
+2022-04-29 13:39:53.977 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:39:53.978 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 13:39:53.979 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:53.980 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 13:39:53.981 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 13:39:53.983 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@1641a600, org.apache.catalina.connector.ResponseFacade@3a195a02]
+2022-04-29 13:39:53.985 TRACE 410 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:39:53.986 TRACE 410 --- [http-nio-8080-exec-1] o.s.w.s.v.InternalResourceViewResolver   : View with key [error] served from cache
+2022-04-29 13:39:53.986 DEBUG 410 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 13:39:53.986 TRACE 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c9cf185] 
+2022-04-29 13:39:53.988 DEBUG 410 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 13:39:59.483 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/users/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:59.484 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 13:39:59.486 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 13:39:59.497 TRACE 410 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 13:39:59.498 TRACE 410 --- [http-nio-8080-exec-2] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 13:39:59.499 DEBUG 410 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 13:39:59.499 TRACE 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@8f78e4] 
+2022-04-29 13:39:59.501 DEBUG 410 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 13:39:59.518 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/js/bootstrap.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:59.518 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/css/bootstrap.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 13:39:59.519 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:39:59.519 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 13:39:59.519 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:39:59.520 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 13:39:59.522 TRACE 410 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:39:59.522 TRACE 410 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 13:39:59.524 TRACE 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:39:59.525 TRACE 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 13:39:59.526 DEBUG 410 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:39:59.526 DEBUG 410 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 13:44:30.362  INFO 410 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 13:44:30.367  INFO 410 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-29 13:44:30.376  INFO 410 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-29 14:21:55.923  INFO 330 --- [main] com.example.app.AppApplication           : Starting AppApplication using Java 15.0.2 on e20cdcf8fb74 with PID 330 (/srv/build/libs/app-0.0.1-SNAPSHOT.jar started by root in /srv)
+2022-04-29 14:21:55.930  INFO 330 --- [main] com.example.app.AppApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-04-29 14:21:57.438  INFO 330 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-29 14:21:57.554  INFO 330 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interfaces.
+2022-04-29 14:21:58.754  INFO 330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-29 14:21:58.782  INFO 330 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-29 14:21:58.783  INFO 330 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-29 14:21:58.925  INFO 330 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-29 14:21:58.926  INFO 330 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2842 ms
+2022-04-29 14:21:59.322  INFO 330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-29 14:21:59.808  INFO 330 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-29 14:21:59.942  INFO 330 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-29 14:22:00.209  INFO 330 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-29 14:22:00.757  INFO 330 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-29 14:22:01.271  INFO 330 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-29 14:22:02.680  INFO 330 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-29 14:22:02.702  INFO 330 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 14:22:03.257  WARN 330 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-29 14:22:03.472 DEBUG 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-04-29 14:22:03.666 TRACE 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.AppApplication:
+	{ [/]}: home()
+2022-04-29 14:22:03.671 TRACE 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.HelloController:
+	{GET [/]}: index(Model)
+2022-04-29 14:22:03.681 TRACE 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.e.a.c.UserController:
+	{GET [/users]}: index(Model)
+	{DELETE [/users/{id}]}: destroy(Long)
+	{POST [/users]}: create(User)
+	{GET [/users/new]}: newUser(Model)
+	{GET [/users/{id}]}: show(Long,Model)
+	{POST [/users/confirm]}: confirm(String,String,String,Model)
+2022-04-29 14:22:03.687 TRACE 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2022-04-29 14:22:03.692 DEBUG 330 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-04-29 14:22:04.361  INFO 330 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-29 14:22:04.387 DEBUG 330 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-04-29 14:22:04.403 TRACE 330 --- [main] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-04-29 14:22:04.432 TRACE 330 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-04-29 14:22:04.433 TRACE 330 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-04-29 14:22:04.434 DEBUG 330 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-04-29 14:22:04.457 DEBUG 330 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-04-29 14:22:04.734  INFO 330 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-29 14:22:04.749  INFO 330 --- [main] com.example.app.AppApplication           : Started AppApplication in 9.927 seconds (JVM running for 10.82)
+2022-04-29 14:22:26.622  INFO 330 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:22:26.622  INFO 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-29 14:22:26.623 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@6ed16657
+2022-04-29 14:22:26.624 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@aa4d8cc
+2022-04-29 14:22:26.625 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@260a3a5e
+2022-04-29 14:22:26.627 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2022-04-29 14:22:26.628 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2022-04-29 14:22:26.629 DEBUG 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-29 14:22:26.630  INFO 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-04-29 14:22:26.654 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:22:26.667 TRACE 330 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 14:22:26.694 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/users/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:22:26.698 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 14:22:26.751 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:22:26.751 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:22:26.768 TRACE 330 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:22:26.776 DEBUG 330 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:22:26.777 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@176e017d] 
+2022-04-29 14:22:27.309 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:22:27.310 DEBUG 330 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:22:27.311 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5a452ee8] 
+2022-04-29 14:22:27.559 DEBUG 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:22:27.650 DEBUG 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:22:27.687 TRACE 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/css/bootstrap.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:22:27.694 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/bootstrap/5.1.3/js/bootstrap.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:22:27.703 TRACE 330 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 14:22:27.703 TRACE 330 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Matching patterns [/webjars/**, /**]
+2022-04-29 14:22:27.708 TRACE 330 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 14:22:27.708 TRACE 330 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]] and 4 interceptors
+2022-04-29 14:22:27.717 TRACE 330 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 14:22:27.717 TRACE 330 --- [http-nio-8080-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 14:22:27.718 TRACE 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 14:22:27.718 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 14:22:27.719 DEBUG 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 14:22:27.719 DEBUG 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 14:25:35.635 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:25:35.638 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 14:25:35.639 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:25:35.640 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:25:35.642 TRACE 330 --- [http-nio-8080-exec-7] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/new] served from cache
+2022-04-29 14:25:35.642 DEBUG 330 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:25:35.643 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@176e017d] 
+2022-04-29 14:25:35.647 DEBUG 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:25:53.959 TRACE 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:25:53.961 TRACE 330 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 14:25:53.964 TRACE 330 --- [http-nio-8080-exec-8] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:25:53.974 TRACE 330 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:25:53.976 TRACE 330 --- [http-nio-8080-exec-8] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 14:25:53.977 DEBUG 330 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:25:53.977 TRACE 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5a452ee8] 
+2022-04-29 14:25:53.983 DEBUG 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:26:05.692 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:26:05.693 TRACE 330 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 14:26:05.695 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:26:05.697 TRACE 330 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:26:05.700 TRACE 330 --- [http-nio-8080-exec-9] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/new] served from cache
+2022-04-29 14:26:05.701 DEBUG 330 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:26:05.702 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@176e017d] 
+2022-04-29 14:26:05.707 DEBUG 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:26:15.220 TRACE 330 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/users/confirm", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:26:15.223 TRACE 330 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#confirm(String, String, String, Model)
+2022-04-29 14:26:15.264 TRACE 330 --- [http-nio-8080-exec-10] o.s.web.method.HandlerMethod             : Arguments: [ccc, ccc, ccc, {}]
+2022-04-29 14:26:15.267 TRACE 330 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:26:15.269 DEBUG 330 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:26:15.270 TRACE 330 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@4821ea66] 
+2022-04-29 14:26:15.278 DEBUG 330 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:26:46.306 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/users", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:26:46.308 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#create(User)
+2022-04-29 14:26:46.331 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [{id:null,name:ccc,email:ccc,inquiry:ccc}]
+2022-04-29 14:26:46.405 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:26:46.408 DEBUG 330 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:26:46.410 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c62eba0] 
+2022-04-29 14:26:46.417 DEBUG 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:26:52.848 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:26:52.856 TRACE 330 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-29 14:26:52.859 TRACE 330 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-04-29 14:26:52.861 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:26:52.862 TRACE 330 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:26:52.864 DEBUG 330 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:26:52.866 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@6f93d237] 
+2022-04-29 14:26:52.871 DEBUG 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:27:49.737 TRACE 330 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:27:49.742 TRACE 330 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-29 14:27:49.746 TRACE 330 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-04-29 14:27:49.748 TRACE 330 --- [http-nio-8080-exec-6] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:27:49.749 TRACE 330 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:27:49.751 TRACE 330 --- [http-nio-8080-exec-6] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
+2022-04-29 14:27:49.753 DEBUG 330 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:27:49.753 TRACE 330 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@6f93d237] 
+2022-04-29 14:27:49.755 DEBUG 330 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:27:58.525 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:27:58.526 TRACE 330 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 14:27:58.528 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:27:58.539 TRACE 330 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:27:58.541 TRACE 330 --- [http-nio-8080-exec-5] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 14:27:58.544 DEBUG 330 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:27:58.545 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5a452ee8] 
+2022-04-29 14:27:58.548 DEBUG 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:28:06.581 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/users/index", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:28:06.585 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#show(Long, Model)
+2022-04-29 14:28:06.592 DEBUG 330 --- [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public java.lang.String com.example.app.controller.UserController.show(java.lang.Long,org.springframework.ui.Model): Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"
+2022-04-29 14:28:06.600  WARN 330 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "index"]
+2022-04-29 14:28:06.601 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 14:28:06.602 DEBUG 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST, headers={}
+2022-04-29 14:28:06.614 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:28:06.616 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2022-04-29 14:28:06.617 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2022-04-29 14:28:06.619 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.method.HandlerMethod             : Arguments: [org.apache.catalina.core.ApplicationHttpRequest@7bde545c, org.apache.catalina.connector.ResponseFacade@13bc3888]
+2022-04-29 14:28:06.631 TRACE 330 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:28:06.632 DEBUG 330 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2022-04-29 14:28:06.633 TRACE 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@31877a25] 
+2022-04-29 14:28:06.638 DEBUG 330 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400, headers={masked}
+2022-04-29 14:28:06.653 TRACE 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/image/404error.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:28:06.654 TRACE 330 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2022-04-29 14:28:06.656 TRACE 330 --- [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not modified
+2022-04-29 14:28:06.657 TRACE 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2022-04-29 14:28:06.657 DEBUG 330 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED, headers={masked}
+2022-04-29 14:29:04.019 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/users/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:29:04.021 TRACE 330 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 14:29:04.023 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:29:04.034 TRACE 330 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:29:04.035 TRACE 330 --- [http-nio-8080-exec-9] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 14:29:04.035 DEBUG 330 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:29:04.036 TRACE 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5a452ee8] 
+2022-04-29 14:29:04.039 DEBUG 330 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:29:10.306 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users/new", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:29:10.307 TRACE 330 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#newUser(Model)
+2022-04-29 14:29:10.308 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:29:10.310 TRACE 330 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:29:10.312 TRACE 330 --- [http-nio-8080-exec-1] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/new] served from cache
+2022-04-29 14:29:10.314 DEBUG 330 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:29:10.316 TRACE 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@176e017d] 
+2022-04-29 14:29:10.319 DEBUG 330 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:29:28.506 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/users/confirm", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:29:28.508 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#confirm(String, String, String, Model)
+2022-04-29 14:29:28.511 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.method.HandlerMethod             : Arguments: [ddd, ddd, ddd, {}]
+2022-04-29 14:29:28.512 TRACE 330 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:29:28.514 TRACE 330 --- [http-nio-8080-exec-2] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/confirm] served from cache
+2022-04-29 14:29:28.515 DEBUG 330 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:29:28.516 TRACE 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@4821ea66] 
+2022-04-29 14:29:28.519 DEBUG 330 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:29:38.621 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/users", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:29:38.623 TRACE 330 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#create(User)
+2022-04-29 14:29:38.627 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.method.HandlerMethod             : Arguments: [{id:null,name:ddd,email:ddd,inquiry:ddd}]
+2022-04-29 14:29:38.642 TRACE 330 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:29:38.643 TRACE 330 --- [http-nio-8080-exec-4] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/complete] served from cache
+2022-04-29 14:29:38.644 DEBUG 330 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:29:38.644 TRACE 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@2c62eba0] 
+2022-04-29 14:29:38.650 DEBUG 330 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:30:00.666 TRACE 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:30:00.669 TRACE 330 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-04-29 14:30:00.671 TRACE 330 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-04-29 14:30:00.674 TRACE 330 --- [http-nio-8080-exec-3] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:30:00.675 TRACE 330 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:30:00.676 TRACE 330 --- [http-nio-8080-exec-3] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
+2022-04-29 14:30:00.679 DEBUG 330 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:30:00.680 TRACE 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@6f93d237] 
+2022-04-29 14:30:00.681 DEBUG 330 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:30:08.437 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/users", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2022-04-29 14:30:08.438 TRACE 330 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.UserController#index(Model)
+2022-04-29 14:30:08.440 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-04-29 14:30:08.449 TRACE 330 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-04-29 14:30:08.451 TRACE 330 --- [http-nio-8080-exec-5] o.s.w.s.v.InternalResourceViewResolver   : View with key [users/index] served from cache
+2022-04-29 14:30:08.453 DEBUG 330 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-29 14:30:08.454 TRACE 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Rendering view [org.thymeleaf.spring5.view.ThymeleafView@5a452ee8] 
+2022-04-29 14:30:08.461 DEBUG 330 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK, headers={masked}
+2022-04-29 14:38:57.590  INFO 330 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-29 14:38:57.595  INFO 330 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-29 14:38:57.602  INFO 330 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
