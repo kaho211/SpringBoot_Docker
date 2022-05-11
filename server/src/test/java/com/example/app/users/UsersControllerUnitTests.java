@@ -1,5 +1,6 @@
 package com.example.app.users;
 
+import javax.transaction.Transactional;
 // import com.example.practice.PracticeApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @AutoConfigureMockMvc
 @SpringBootTest
+@Transactional // メソッドの実行のたびにロールバックする
 public class UsersControllerUnitTests {
         // Mockオブジェクト
         @Autowired
@@ -29,7 +31,7 @@ public class UsersControllerUnitTests {
 
         @Test
         // getリクエスト 新規作成画面
-        void newUser処理でviewとしてnewが渡される() throws Exception {
+        void new処理でviewとしてnewが渡される() throws Exception {
                 this.mockMvc.perform(get("/users/new"))
                                 .andExpect(status().isOk())
                                 .andExpect(view().name("users/new"));
@@ -38,10 +40,6 @@ public class UsersControllerUnitTests {
         @Test
         // Entityに納められたデータを引っ張ってこれているか
         void フォームに値が入力されている場合は確認画面へ() throws Exception {
-                // ContactForm contactForm = new ContactForm();
-                // contactForm.setName("test");
-                // contactForm.setMail("test@email.com");
-                // contactForm.setContent("テストです。");
 
                 this.mockMvc
                                 .perform((post("/users/confirm"))
@@ -60,7 +58,7 @@ public class UsersControllerUnitTests {
                                 .perform((post("/users/"))
                                                 .param("name", "テスト")
                                                 .param("email", "test@test")
-                                                .param("inquiry", "テストです。"))
+                                                .param("inquiry", "complete用のテストです。"))
                                 .andExpect(status().isOk())
                                 .andExpect(model().hasNoErrors())
                                 .andExpect(model().attribute("User", User))

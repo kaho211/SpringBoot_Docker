@@ -44,16 +44,16 @@ import com.example.app.entity.User;
 import com.example.app.service.UserService;
 
 @Controller
-@RequestMapping("/users") // ①
+@RequestMapping("/users")
 public class UserController {
   @Autowired
   private UserService userService;
 
   @GetMapping
-  public String index(Model model) { // ②
+  public String index(Model model) {
     List<User> users = userService.findAll();
-    model.addAttribute("users", users); // ③
-    return "users/index"; // ④
+    model.addAttribute("users", users);
+    return "users/index";
   }
 
   @GetMapping("new")
@@ -99,9 +99,9 @@ public class UserController {
   // player.setId(id);
   // ; return }
 
-  @DeleteMapping("{id}")
-  public String destroy(@PathVariable Long id) {
-    userService.delete(id);
-    return "redirect:/users";
-  }
+  // @DeleteMapping("{id}")
+  // public String destroy(@PathVariable Long id) {
+  // userService.delete(id);
+  // return "redirect:/users";
+  // }
 }
