@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.842s</div>
+<div class="counter">2.298s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">1.842s</td>
+<td class="success">2.298s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,11 +87,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2022-05-11 01:35:18.920  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.app.DBSelectTest], using SpringBootContextLoader
-2022-05-11 01:35:18.938  INFO 339 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.app.DBSelectTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-05-11 01:35:18.939  INFO 339 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.app.DBSelectTest]: DBSelectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-05-11 01:35:18.981  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.DBSelectTest
-2022-05-11 01:35:19.019  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@e23af91, org.springframework.test.context.transaction.TransactionalTestExecutionListener@396ec737, com.github.springtestdbunit.DbUnitTestExecutionListener@35d53cd8]
+<pre>2022-05-11 03:42:18.905  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.app.DBSelectTest], using SpringBootContextLoader
+2022-05-11 03:42:18.972  INFO 350 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.app.DBSelectTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-11 03:42:18.975  INFO 350 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.app.DBSelectTest]: DBSelectTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-11 03:42:19.007  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.DBSelectTest
+2022-05-11 03:42:19.088  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@38816a6c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74727e41, com.github.springtestdbunit.DbUnitTestExecutionListener@16117d9]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -101,52 +101,52 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.6.7)
 
-2022-05-11 01:35:19.220  INFO 339 --- [    Test worker] com.example.app.DBSelectTest             : Starting DBSelectTest using Java 15.0.2 on f8daef63a265 with PID 339 (started by root in /srv)
-2022-05-11 01:35:19.221  INFO 339 --- [    Test worker] com.example.app.DBSelectTest             : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-05-11 01:35:19.252 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3833897c, started on Wed May 11 01:35:19 UTC 2022
-2022-05-11 01:35:20.802  INFO 339 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-11 01:35:21.034  INFO 339 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 231 ms. Found 1 JPA repository interfaces.
-2022-05-11 01:35:21.606 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
-2022-05-11 01:35:21.606 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
-2022-05-11 01:35:21.922  INFO 339 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2022-05-11 01:35:21.962  INFO 339 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2022-05-11 01:35:22.313  INFO 339 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-11 01:35:22.505  INFO 339 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-05-11 01:35:22.674  INFO 339 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-11 01:35:22.675  INFO 339 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-11 01:35:23.917  WARN 339 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-11 01:35:24.779 DEBUG 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-11 01:35:24.981 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2022-05-11 03:42:19.566  INFO 350 --- [    Test worker] com.example.app.DBSelectTest             : Starting DBSelectTest using Java 15.0.2 on 047c04d49341 with PID 350 (started by root in /srv)
+2022-05-11 03:42:19.568  INFO 350 --- [    Test worker] com.example.app.DBSelectTest             : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-05-11 03:42:19.724 TRACE 350 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1a557a52, started on Wed May 11 03:42:19 UTC 2022
+2022-05-11 03:42:27.253  INFO 350 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-11 03:42:28.218  INFO 350 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 961 ms. Found 1 JPA repository interfaces.
+2022-05-11 03:42:30.760 TRACE 350 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
+2022-05-11 03:42:30.762 TRACE 350 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
+2022-05-11 03:42:31.620  INFO 350 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-05-11 03:42:31.661  INFO 350 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-05-11 03:42:32.188  INFO 350 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-11 03:42:32.477  INFO 350 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-05-11 03:42:33.386  INFO 350 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-11 03:42:33.388  INFO 350 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-11 03:42:38.291  WARN 350 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-11 03:42:42.265 DEBUG 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-05-11 03:42:42.901 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	c.e.a.AppApplication:
 	{ [/]}: home()
-2022-05-11 01:35:24.983 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2022-05-11 03:42:42.903 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	c.e.a.c.HelloController:
 	{GET [/]}: index(Model)
-2022-05-11 01:35:24.987 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+2022-05-11 03:42:42.908 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	c.e.a.c.UserController:
 	{GET [/users]}: index(Model)
 	{DELETE [/users/{id}]}: destroy(Long)
 	{POST [/users]}: create(User)
-	{GET [/users/new]}: newUser(Model)
 	{GET [/users/{id}]}: show(Long,Model)
 	{POST [/users/confirm]}: confirm(String,String,String,Model)
-2022-05-11 01:35:24.989 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	{GET [/users/new]}: newUser(Model)
+2022-05-11 03:42:42.913 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
 	o.s.b.a.w.s.e.BasicErrorController:
 	{ [/error]}: error(HttpServletRequest)
 	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-2022-05-11 01:35:24.991 DEBUG 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
-2022-05-11 01:35:25.064  INFO 339 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-05-11 01:35:25.425 DEBUG 339 --- [    Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
-2022-05-11 01:35:25.499 TRACE 339 --- [    Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
-2022-05-11 01:35:25.592 TRACE 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-05-11 01:35:25.592 TRACE 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-05-11 01:35:25.592 DEBUG 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-11 01:35:25.678 DEBUG 339 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-11 01:35:27.123 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Using LifecycleProcessor [org.springframework.context.support.DefaultLifecycleProcessor@724e0a77]
-2022-05-11 01:35:27.126  INFO 339 --- [    Test worker] com.example.app.DBSelectTest             : Started DBSelectTest in 8.099 seconds (JVM running for 45.237)
-2022-05-11 01:35:27.408  INFO 339 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@1c76b2fe testClass = DBSelectTest, testInstance = com.example.app.DBSelectTest@7fa2473a, testMethod = contextLoads@DBSelectTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@47629063 testClass = DBSelectTest, locations = '{}', classes = '{class com.example.app.AppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@76f4b65, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@64c63c79, [ImportsContextCustomizer@3d67e3d3 key = [org.springframework.boot.test.context.TestConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7a1234bf, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@762ef0ea], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'com.github.springtestdbunit.DbUnitTestExecutionListener.connection' -&gt; com.github.springtestdbunit.DatabaseConnections@14af57c3, 'com.github.springtestdbunit.DbUnitTestExecutionListener.databseOperationLookup' -&gt; com.github.springtestdbunit.operation.DefaultDatabaseOperationLookup@795949fb, 'com.github.springtestdbunit.DbUnitTestExecutionListener.dataSetLoader' -&gt; com.example.app.CsvDataSetLoader@2aeb3f3b]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@235dacd7]; rollback [true]
-2022-05-11 01:35:27.969  WARN 339 --- [    Test worker] o.dbunit.dataset.AbstractTableMetaData   : Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'MySQL' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products.
-2022-05-11 01:35:29.179  INFO 339 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@1c76b2fe testClass = DBSelectTest, testInstance = com.example.app.DBSelectTest@7fa2473a, testMethod = contextLoads@DBSelectTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@47629063 testClass = DBSelectTest, locations = '{}', classes = '{class com.example.app.AppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@76f4b65, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@64c63c79, [ImportsContextCustomizer@3d67e3d3 key = [org.springframework.boot.test.context.TestConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7a1234bf, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@38aa816f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@53941c2f, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@762ef0ea], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'com.github.springtestdbunit.DbUnitTestExecutionListener.connection' -&gt; com.github.springtestdbunit.DatabaseConnections@14af57c3, 'com.github.springtestdbunit.DbUnitTestExecutionListener.databseOperationLookup' -&gt; com.github.springtestdbunit.operation.DefaultDatabaseOperationLookup@795949fb, 'com.github.springtestdbunit.DbUnitTestExecutionListener.dataSetLoader' -&gt; com.example.app.CsvDataSetLoader@2aeb3f3b]]
+2022-05-11 03:42:42.916 DEBUG 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2022-05-11 03:42:43.196  INFO 350 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-11 03:42:44.646 DEBUG 350 --- [    Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2022-05-11 03:42:45.165 TRACE 350 --- [    Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-05-11 03:42:45.763 TRACE 350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2022-05-11 03:42:45.765 TRACE 350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-05-11 03:42:45.767 DEBUG 350 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-11 03:42:46.162 DEBUG 350 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-05-11 03:42:53.059 TRACE 350 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Using LifecycleProcessor [org.springframework.context.support.DefaultLifecycleProcessor@6f55aef7]
+2022-05-11 03:42:53.067  INFO 350 --- [    Test worker] com.example.app.DBSelectTest             : Started DBSelectTest in 33.962 seconds (JVM running for 241.552)
+2022-05-11 03:42:54.336  INFO 350 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@81f9b01 testClass = DBSelectTest, testInstance = com.example.app.DBSelectTest@53d94a6b, testMethod = contextLoads@DBSelectTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4707d60a testClass = DBSelectTest, locations = '{}', classes = '{class com.example.app.AppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7331196b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4331d187, [ImportsContextCustomizer@4d7f3adf key = [org.springframework.boot.test.context.TestConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6c0d9d86, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f3f02ee, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79179359, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@343570b7], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'com.github.springtestdbunit.DbUnitTestExecutionListener.connection' -&gt; com.github.springtestdbunit.DatabaseConnections@394c77e2, 'com.github.springtestdbunit.DbUnitTestExecutionListener.databseOperationLookup' -&gt; com.github.springtestdbunit.operation.DefaultDatabaseOperationLookup@20dfe8b2, 'com.github.springtestdbunit.DbUnitTestExecutionListener.dataSetLoader' -&gt; com.example.app.CsvDataSetLoader@5911dd25]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@27de9336]; rollback [true]
+2022-05-11 03:42:56.155  WARN 350 --- [    Test worker] o.dbunit.dataset.AbstractTableMetaData   : Potential problem found: The configured data type factory 'class org.dbunit.dataset.datatype.DefaultDataTypeFactory' might cause problems with the current database 'MySQL' (e.g. some datatypes may not be supported properly). In rare cases you might see this message because the list of supported database products is incomplete (list=[derby]). If so please request a java-class update via the forums.If you are using your own IDataTypeFactory extending DefaultDataTypeFactory, ensure that you override getValidDbProducts() to specify the supported database products.
+2022-05-11 03:42:56.500  INFO 350 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@81f9b01 testClass = DBSelectTest, testInstance = com.example.app.DBSelectTest@53d94a6b, testMethod = contextLoads@DBSelectTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4707d60a testClass = DBSelectTest, locations = '{}', classes = '{class com.example.app.AppApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7331196b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4331d187, [ImportsContextCustomizer@4d7f3adf key = [org.springframework.boot.test.context.TestConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6c0d9d86, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f3f02ee, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@79179359, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@343570b7], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true, 'com.github.springtestdbunit.DbUnitTestExecutionListener.connection' -&gt; com.github.springtestdbunit.DatabaseConnections@394c77e2, 'com.github.springtestdbunit.DbUnitTestExecutionListener.databseOperationLookup' -&gt; com.github.springtestdbunit.operation.DefaultDatabaseOperationLookup@20dfe8b2, 'com.github.springtestdbunit.DbUnitTestExecutionListener.dataSetLoader' -&gt; com.example.app.CsvDataSetLoader@5911dd25]]
 </pre>
 </span>
 </div>
@@ -158,7 +158,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at May 11, 2022, 1:35:41 AM</p>
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at May 11, 2022, 3:42:58 AM</p>
 </div>
 </div>
 </body>

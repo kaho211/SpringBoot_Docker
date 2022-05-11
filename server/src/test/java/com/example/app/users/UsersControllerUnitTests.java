@@ -54,4 +54,16 @@ public class UsersControllerUnitTests {
                                 .andExpect(view().name("users/confirm"));
         }
 
+        @Test
+        void 確認画面から完了画面へ() throws Exception {
+                this.mockMvc
+                                .perform((post("/users/"))
+                                                .param("name", "テスト")
+                                                .param("email", "test@test")
+                                                .param("inquiry", "テストです。"))
+                                .andExpect(status().isOk())
+                                .andExpect(model().hasNoErrors())
+                                .andExpect(model().attribute("User", User))
+                                .andExpect(view().name("users/complete"));
+        }
 }

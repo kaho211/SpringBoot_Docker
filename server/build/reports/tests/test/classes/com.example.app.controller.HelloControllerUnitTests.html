@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.653s</div>
+<div class="counter">0.182s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">index処理でviewとしてindexが渡される()</td>
-<td class="success">2.609s</td>
+<td class="success">0.128s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">index処理でモデルのメッセージにHelloworldが渡される()</td>
-<td class="success">0.044s</td>
+<td class="success">0.054s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,78 +92,23 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2022-05-11 01:35:29.188  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.app.controller.HelloControllerUnitTests], using SpringBootContextLoader
-2022-05-11 01:35:29.202  INFO 339 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.app.controller.HelloControllerUnitTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-05-11 01:35:29.203  INFO 339 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.app.controller.HelloControllerUnitTests]: HelloControllerUnitTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-05-11 01:35:29.312  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.controller.HelloControllerUnitTests
-2022-05-11 01:35:29.326  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2022-05-11 01:35:29.327  INFO 339 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@19439ec4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f53f5a4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@21ebf9be, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d50b4c4, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7860a014, org.springframework.test.context.support.DirtiesContextTestExecutionListener@86e8469, org.springframework.test.context.transaction.TransactionalTestExecutionListener@76b6bad3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@e38d655, org.springframework.test.context.event.EventPublishingTestExecutionListener@7325b786, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f943847, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4c376b44, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@47596e9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ab29866, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@74cad577, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@350ede1]
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.6.7)
-
-2022-05-11 01:35:29.526  INFO 339 --- [    Test worker] c.e.a.c.HelloControllerUnitTests         : Starting HelloControllerUnitTests using Java 15.0.2 on f8daef63a265 with PID 339 (started by root in /srv)
-2022-05-11 01:35:29.527  INFO 339 --- [    Test worker] c.e.a.c.HelloControllerUnitTests         : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-05-11 01:35:29.558 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5cb64b9c, started on Wed May 11 01:35:29 UTC 2022
-2022-05-11 01:35:31.182  INFO 339 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-05-11 01:35:31.447  INFO 339 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263 ms. Found 1 JPA repository interfaces.
-2022-05-11 01:35:32.113 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'messageSource' bean, using [Empty MessageSource]
-2022-05-11 01:35:32.113 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : No 'applicationEventMulticaster' bean, using [SimpleApplicationEventMulticaster]
-2022-05-11 01:35:32.405  INFO 339 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2022-05-11 01:35:32.422  INFO 339 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2022-05-11 01:35:32.710  INFO 339 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-05-11 01:35:32.840  INFO 339 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-05-11 01:35:32.990  INFO 339 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-05-11 01:35:32.991  INFO 339 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-05-11 01:35:34.196  WARN 339 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-05-11 01:35:35.100 DEBUG 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2022-05-11 01:35:35.318 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	c.e.a.AppApplication:
-	{ [/]}: home()
-2022-05-11 01:35:35.319 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	c.e.a.c.HelloController:
-	{GET [/]}: index(Model)
-2022-05-11 01:35:35.322 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	c.e.a.c.UserController:
-	{GET [/users]}: index(Model)
-	{DELETE [/users/{id}]}: destroy(Long)
-	{POST [/users]}: create(User)
-	{GET [/users/new]}: newUser(Model)
-	{GET [/users/{id}]}: show(Long,Model)
-	{POST [/users/confirm]}: confirm(String,String,String,Model)
-2022-05-11 01:35:35.324 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 
-	o.s.b.a.w.s.e.BasicErrorController:
-	{ [/error]}: error(HttpServletRequest)
-	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
-2022-05-11 01:35:35.326 DEBUG 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
-2022-05-11 01:35:35.411  INFO 339 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-05-11 01:35:35.726 DEBUG 339 --- [    Test worker] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
-2022-05-11 01:35:35.813 TRACE 339 --- [    Test worker] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
-2022-05-11 01:35:35.918 TRACE 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
-2022-05-11 01:35:35.918 TRACE 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-2022-05-11 01:35:35.919 DEBUG 339 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2022-05-11 01:35:36.001 DEBUG 339 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2022-05-11 01:35:37.525  INFO 339 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2022-05-11 01:35:37.526  INFO 339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2022-05-11 01:35:37.527  INFO 339 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2022-05-11 01:35:37.547 TRACE 339 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Using LifecycleProcessor [org.springframework.context.support.DefaultLifecycleProcessor@3e356ed6]
-2022-05-11 01:35:37.552  INFO 339 --- [    Test worker] c.e.a.c.HelloControllerUnitTests         : Started HelloControllerUnitTests in 8.218 seconds (JVM running for 55.663)
-2022-05-11 01:35:37.790 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
-2022-05-11 01:35:37.795 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
-2022-05-11 01:35:37.897 TRACE 339 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [{}]
-2022-05-11 01:35:37.917 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
-2022-05-11 01:35:38.006 DEBUG 339 --- [    Test worker] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
-2022-05-11 01:35:40.190 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
-2022-05-11 01:35:40.190 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
-2022-05-11 01:35:40.191 TRACE 339 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [{}]
-2022-05-11 01:35:40.191 TRACE 339 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
-2022-05-11 01:35:40.192 TRACE 339 --- [    Test worker] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
-2022-05-11 01:35:40.192 DEBUG 339 --- [    Test worker] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+<pre>2022-05-11 03:42:56.532  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.app.controller.HelloControllerUnitTests], using SpringBootContextLoader
+2022-05-11 03:42:56.602  INFO 350 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.app.controller.HelloControllerUnitTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-05-11 03:42:56.605  INFO 350 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.app.controller.HelloControllerUnitTests]: HelloControllerUnitTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-05-11 03:42:57.169  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.app.AppApplication for test class com.example.app.controller.HelloControllerUnitTests
+2022-05-11 03:42:57.232  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-05-11 03:42:57.235  INFO 350 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29a51ff1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6dacde96, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6f999cf4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7892635c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@79c9a128, org.springframework.test.context.support.DirtiesContextTestExecutionListener@729a98e9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51c7d472, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3aa4d595, org.springframework.test.context.event.EventPublishingTestExecutionListener@e50e308, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28ab7ffb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@47a05ad8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5b3427c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5275d709, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@21523e1b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6461c673]
+2022-05-11 03:42:57.335 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-05-11 03:42:57.336 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-05-11 03:42:57.338 TRACE 350 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-05-11 03:42:57.340 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-05-11 03:42:57.343 DEBUG 350 --- [    Test worker] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2022-05-11 03:42:57.431 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{GET [/]}, { [/]}]
+2022-05-11 03:42:57.432 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.app.controller.HelloController#index(Model)
+2022-05-11 03:42:57.433 TRACE 350 --- [    Test worker] o.s.web.method.HandlerMethod             : Arguments: [{}]
+2022-05-11 03:42:57.434 TRACE 350 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2022-05-11 03:42:57.434 TRACE 350 --- [    Test worker] o.s.w.s.v.InternalResourceViewResolver   : View with key [index] served from cache
+2022-05-11 03:42:57.435 DEBUG 350 --- [    Test worker] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
 </pre>
 </span>
 </div>
@@ -175,7 +120,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at May 11, 2022, 1:35:41 AM</p>
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at May 11, 2022, 3:42:58 AM</p>
 </div>
 </div>
 </body>
