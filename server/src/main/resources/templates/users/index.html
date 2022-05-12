@@ -19,14 +19,12 @@
       <table class="table" th:if="${users.size() >= 1}">
         <thead>
           <tr>
-            <th>id</th>
             <th>名前</th>
             <th>メールアドレス</th>
             <th>お問合せ内容</th>
           </tr>
         </thead>
         <tbody th:each="user:${users}" th:object="${user}">
-          <td th:text="*{id}"></td>
           <td th:text="*{name}"></td>
           <td th:text="*{email}"></td>
           <td th:text="*{inquiry}"></td>

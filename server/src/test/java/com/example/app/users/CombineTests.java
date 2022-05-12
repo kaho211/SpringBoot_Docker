@@ -1,12 +1,5 @@
 package com.example.app.users;
 
-import com.example.app.CsvDataSetLoader;
-import com.example.app.entity.User;
-import com.example.app.service.UserService;
-import com.github.springtestdbunit.DbUnitTestExecutionListener;
-import com.github.springtestdbunit.annotation.DatabaseSetup;
-import com.github.springtestdbunit.annotation.DbUnitConfiguration;
-
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
@@ -22,13 +15,22 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
 import static org.springframework.web.reactive.function.BodyInserters.*;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 
-import java.util.List;
-import javax.transaction.Transactional;
+import com.example.app.CsvDataSetLoader;
+import com.example.app.entity.User;
+import com.example.app.service.UserService;
+import com.github.springtestdbunit.DbUnitTestExecutionListener;
+// import com.github.springtestdbunit.TransactionDbUnitTestExecutionListener;
+import com.github.springtestdbunit.annotation.DatabaseSetup;
+import com.github.springtestdbunit.annotation.DbUnitConfiguration;
 
 // csvファイルの読み込みを可能にする
 @DbUnitConfiguration(dataSetLoader = CsvDataSetLoader.class)
@@ -64,9 +66,9 @@ public class CombineTests {
         this.webClient.get().uri("/users/new").exchange().expectStatus().isOk();
 
         // データの入力
-        String name = "combinetest3";
-        String email = "combinetest3@email.com";
-        String inquiry = "結合テスト3です。";
+        String name = "combinetest5";
+        String email = "combinetest5@email.com";
+        String inquiry = "結合テスト5です。";
 
         User user = new User();
         user.setName(name);
